@@ -1,0 +1,29 @@
+# ===== Unity generated folders =====
+[Ll]ibrary/
+[Tt]emp/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+
+# ===== IDE files =====
+.vscode/
+.idea/
+*.sln
+*.csproj
+
+# ===== OS cruft =====
+.DS_Store
+Thumbs.db
+
+# ===== Unity crash/temp =====
+*.pidb
+*.suo
+*.user
+*.userosscache
+*.usertasks
+
+# ===== Large binary artifacts (optional Git LFS) =====
+# Uncomment below AFTER you install Git LFS
+# *.png filter=lfs diff=lfs merge=lfs -text
+# *.psd filter=lfs diff=lfs merge=lfs -text
