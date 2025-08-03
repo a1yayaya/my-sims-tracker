@@ -1,35 +1,61 @@
+﻿// SaveSystem.cs
 using System.IO;
 using UnityEngine;
-using Newtonsoft.Json;     // needs the package you added earlier
+using Newtonsoft.Json;
 
 /// <summary>
-/// Lightweight wrapper for saving / loading one SavePayload JSON file.
+/// Tiny static helper that loads one shared SavePayload, lets anyone
+/// read / mutate it, and writes it to disk on demand.
 /// </summary>
 public static class SaveSystem
 {
-    // File lives in OS-specific persistent-data folder.
-    private static string FilePath =>
-        Path.Combine(Application.persistentDataPath, "save.json");
+    /* ───────────────  SINGLE SOURCE OF TRUTH  ─────────────── */
 
-    /// <summary>Serialize and write to disk.</summary>
-    public static void Save(SavePayload payload)
+    private static SavePayload _payload;     // cached after first load
+
+    /// <summary>
+    /// The live SavePayload shared by all managers.
+    /// Creates a new one if the file doesn’t exist.
+    /// </summary>
+    public static SavePayload Current
     {
-        // Ensure parent folder exists (mobile platforms sometimes delete it)
+        get
+        {
+            if (_payload == null)
+            {
+                // Try to load file once; if it fails we create a fresh payload
+                if (!TryLoad(out _payload) || _payload == null)
+                    _payload = new SavePayload();
+            }
+            return _payload;
+        }
+    }
+
+    /* ───────────────  PUBLIC I/O  ─────────────────────────── */
+
+    /// <summary>Serialize <paramref name="payload"/> (or Current) to JSON and write to disk.</summary>
+    public static void Save(SavePayload payload = null)
+    {
+        if (payload == null) payload = Current;
+
+        // Ensure folder exists (mobile platforms sometimes clear it)
         Directory.CreateDirectory(Path.GetDirectoryName(FilePath));
-        File.WriteAllText(FilePath,
+
+        File.WriteAllText(
+            FilePath,
             JsonConvert.SerializeObject(payload, Formatting.Indented));
+
 #if UNITY_EDITOR
         Debug.Log($"[SaveSystem] Saved to {FilePath}");
 #endif
     }
 
-    /// <summary>Try to load. Returns true if a file was found and parsed.</summary>
+    /// <summary>Try to load an existing save file. Returns false if not found.</summary>
     public static bool TryLoad(out SavePayload payload)
     {
         if (File.Exists(FilePath))
         {
-            string json = File.ReadAllText(FilePath);
-            payload = JsonConvert.DeserializeObject<SavePayload>(json);
+            payload = JsonConvert.DeserializeObject<SavePayload>(File.ReadAllText(FilePath));
 #if UNITY_EDITOR
             Debug.Log($"[SaveSystem] Loaded save from {FilePath}");
 #endif
@@ -39,4 +65,9 @@ public static class SaveSystem
         payload = null;
         return false;
     }
+
+    /* ───────────────  INTERNAL  ───────────────────────────── */
+
+    private static string FilePath =>
+        Path.Combine(Application.persistentDataPath, "save.json");
 }

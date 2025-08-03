@@ -3,11 +3,55 @@
   "WorkspaceRootPath": "C:\\Users\\aiyat\\My project (4)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|c:\\users\\aiyat\\my project (4)\\assets\\scripts\\core\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|C:\\Users\\aiyat\\My project (4)\\assets\\scripts\\skills\\skillui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skills\\skillui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|c:\\users\\aiyat\\my project (4)\\assets\\scripts\\skills\\skillmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skills\\skillmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|C:\\Users\\aiyat\\My project (4)\\assets\\scripts\\skills\\addskillbuttonhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skills\\addskillbuttonhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|C:\\Users\\aiyat\\My project (4)\\assets\\scripts\\skills\\createskillpopup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skills\\createskillpopup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|C:\\Users\\aiyat\\My project (4)\\assets\\scripts\\skills\\skillruntime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skills\\skillruntime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|C:\\Users\\aiyat\\My project (4)\\assets\\scripts\\core\\simpletabtoggle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\simpletabtoggle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|C:\\Users\\aiyat\\My project (4)\\assets\\scripts\\core\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|c:\\users\\aiyat\\my project (4)\\assets\\scripts\\needs\\needspanelspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|C:\\Users\\aiyat\\My project (4)\\assets\\scripts\\core\\savesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\savesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|C:\\Users\\aiyat\\My project (4)\\assets\\scripts\\skills\\skillpanelspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skills\\skillpanelspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|C:\\Users\\aiyat\\My project (4)\\assets\\scripts\\core\\popupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\popupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|C:\\Users\\aiyat\\My project (4)\\assets\\scripts\\needs\\savepayload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\needs\\savepayload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|C:\\Users\\aiyat\\My project (4)\\assets\\scripts\\skills\\skilldefinition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skills\\skilldefinition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|C:\\Users\\aiyat\\My project (4)\\assets\\scripts\\needs\\needspanelspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15DCF4D4-C92D-D7D8-1EDE-9B62906D5B60}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\needs\\needspanelspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,24 +62,158 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
+              "Title": "SkillPanelSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\aiyat\\My project (4)\\Assets\\Scripts\\Skills\\SkillPanelSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Skills\\SkillPanelSpawner.cs",
+              "ToolTip": "C:\\Users\\aiyat\\My project (4)\\Assets\\Scripts\\Skills\\SkillPanelSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Skills\\SkillPanelSpawner.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAADAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T19:36:09.252Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SavePayload.cs",
+              "DocumentMoniker": "C:\\Users\\aiyat\\My project (4)\\Assets\\Scripts\\Needs\\SavePayload.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Needs\\SavePayload.cs",
+              "ToolTip": "C:\\Users\\aiyat\\My project (4)\\Assets\\Scripts\\Needs\\SavePayload.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Needs\\SavePayload.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T19:04:31.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SkillRuntime.cs",
+              "DocumentMoniker": "C:\\Users\\aiyat\\My project (4)\\Assets\\Scripts\\Skills\\SkillRuntime.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Skills\\SkillRuntime.cs",
+              "ToolTip": "C:\\Users\\aiyat\\My project (4)\\Assets\\Scripts\\Skills\\SkillRuntime.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Skills\\SkillRuntime.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T19:02:29.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SkillDefinition.cs",
+              "DocumentMoniker": "C:\\Users\\aiyat\\My project (4)\\Assets\\Scripts\\Skills\\SkillDefinition.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Skills\\SkillDefinition.cs",
+              "ToolTip": "C:\\Users\\aiyat\\My project (4)\\Assets\\Scripts\\Skills\\SkillDefinition.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Skills\\SkillDefinition.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T18:53:58.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\aiyat\\My project (4)\\Assets\\Scripts\\Core\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\GameManager.cs",
-              "ToolTip": "C:\\Users\\aiyat\\My project (4)\\Assets\\Scripts\\Core\\GameManager.cs*",
-              "RelativeToolTip": "Assets\\Scripts\\Core\\GameManager.cs*",
-              "ViewState": "AQIAADIAAAAAAAAAAAAAABoAAAAAAAAA",
+              "ToolTip": "C:\\Users\\aiyat\\My project (4)\\Assets\\Scripts\\Core\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\GameManager.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAowGQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T18:42:25.019Z",
+              "WhenOpened": "2025-08-03T18:42:25.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddSkillButtonHandler.cs",
+              "DocumentMoniker": "C:\\Users\\aiyat\\My project (4)\\Assets\\Scripts\\Skills\\AddSkillButtonHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Skills\\AddSkillButtonHandler.cs",
+              "ToolTip": "C:\\Users\\aiyat\\My project (4)\\Assets\\Scripts\\Skills\\AddSkillButtonHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Skills\\AddSkillButtonHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T21:48:57.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SkillUI.cs",
+              "DocumentMoniker": "C:\\Users\\aiyat\\My project (4)\\Assets\\Scripts\\Skills\\SkillUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Skills\\SkillUI.cs",
+              "ToolTip": "C:\\Users\\aiyat\\My project (4)\\Assets\\Scripts\\Skills\\SkillUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Skills\\SkillUI.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T19:23:52.741Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "SkillManager.cs",
+              "DocumentMoniker": "C:\\Users\\aiyat\\My project (4)\\Assets\\Scripts\\Skills\\SkillManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Skills\\SkillManager.cs",
+              "ToolTip": "C:\\Users\\aiyat\\My project (4)\\Assets\\Scripts\\Skills\\SkillManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Skills\\SkillManager.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAADwv00AAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T19:05:48.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateSkillPopup.cs",
+              "DocumentMoniker": "C:\\Users\\aiyat\\My project (4)\\Assets\\Scripts\\Skills\\CreateSkillPopup.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Skills\\CreateSkillPopup.cs",
+              "ToolTip": "C:\\Users\\aiyat\\My project (4)\\Assets\\Scripts\\Skills\\CreateSkillPopup.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Skills\\CreateSkillPopup.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T20:10:00.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SimpleTabToggle.cs",
+              "DocumentMoniker": "C:\\Users\\aiyat\\My project (4)\\Assets\\Scripts\\Core\\SimpleTabToggle.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\SimpleTabToggle.cs",
+              "ToolTip": "C:\\Users\\aiyat\\My project (4)\\Assets\\Scripts\\Core\\SimpleTabToggle.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\SimpleTabToggle.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T22:30:26.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PopupController.cs",
+              "DocumentMoniker": "C:\\Users\\aiyat\\My project (4)\\Assets\\Scripts\\Core\\PopupController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\PopupController.cs",
+              "ToolTip": "C:\\Users\\aiyat\\My project (4)\\Assets\\Scripts\\Core\\PopupController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\PopupController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwBUAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T21:52:49.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SaveSystem.cs",
+              "DocumentMoniker": "C:\\Users\\aiyat\\My project (4)\\Assets\\Scripts\\Core\\SaveSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\SaveSystem.cs",
+              "ToolTip": "C:\\Users\\aiyat\\My project (4)\\Assets\\Scripts\\Core\\SaveSystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\SaveSystem.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAIBJwEgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T22:03:12.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "NeedsPanelSpawner.cs",
               "DocumentMoniker": "C:\\Users\\aiyat\\My project (4)\\Assets\\Scripts\\Needs\\NeedsPanelSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Needs\\NeedsPanelSpawner.cs",
@@ -43,8 +221,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Needs\\NeedsPanelSpawner.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwA4AAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T00:41:36.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T00:41:36.87Z"
             }
           ]
         }

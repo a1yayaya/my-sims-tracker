@@ -1,68 +1,67 @@
-﻿// GameManager.cs  — full, self-contained
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Central controller: loads / saves the game state, applies need decay,
-/// and exposes an API for UI to modify needs.
+/// Central controller for player Needs: loads data, applies decay, and
+/// exposes AddNeedPoints for the UI.
 /// </summary>
 public class GameManager : MonoBehaviour
 {
-    /* ────────────  INSPECTOR  ──────────── */
     [Header("Need Definitions (drag your ScriptableObjects here)")]
-    public NeedDefinition[] needDefinitions;   // set in Inspector
+    public NeedDefinition[] needDefinitions;
 
-    /* ────────────  RUNTIME  ───────────── */
+    /* runtime */
     private readonly Dictionary<string, NeedRuntime> runtimesByGuid = new();
-    private SavePayload payload;
+    private SavePayload payload;                // shared reference
 
     private const float SecondsPerMinute = 60f;
-    private const float AutosaveIntervalSecs = 300f;   // 5 min
+    private const float AutosaveIntervalSecs = 300f;  // 5 min
 
-    /* ────────────  LIFECYCLE  ─────────── */
-    private void Awake()
+    /*──────────────────────────────────────────────*/
+
+    void Awake()
     {
-        // Load or create save file
-        if (!SaveSystem.TryLoad(out payload) || payload == null)
-            payload = new SavePayload();
+        payload = SaveSystem.Current;           // ← shared object
 
+        // Ensure every NeedDefinition has a runtime entry
         foreach (NeedDefinition def in needDefinitions)
         {
             string key = def.GetInstanceID().ToString();
 
-            NeedRuntime rt = payload.needs.Find(n => n.definitionGuid == key);
-            if (rt == null)
+            if (!runtimesByGuid.TryGetValue(key, out NeedRuntime rt))
             {
-                rt = new NeedRuntime
+                rt = payload.needs.Find(n => n.definitionGuid == key);
+                if (rt == null)
                 {
-                    definitionGuid = key,
-                    value = def.maxValue,
-                    lastTimestamp = NowMs()
-                };
-                payload.needs.Add(rt);
+                    rt = new NeedRuntime
+                    {
+                        definitionGuid = key,
+                        value = def.maxValue,
+                        lastTimestamp = NowMs()
+                    };
+                    payload.needs.Add(rt);
+                }
+                runtimesByGuid[key] = rt;
             }
 
             ApplyOfflineDecay(rt, def);
-            runtimesByGuid[key] = rt;
         }
 
         StartCoroutine(AutosaveLoop());
     }
 
-    private void Update()
+    void Update()
     {
         foreach (NeedDefinition def in needDefinitions)
-        {
-            NeedRuntime rt = GetRuntime(def);
-            DrainWhileRunning(rt, def, Time.deltaTime);
-        }
+            DrainWhileRunning(GetRuntime(def), def, Time.deltaTime);
     }
 
-    private void OnApplicationQuit() => SaveSystem.Save(payload);
+    void OnApplicationQuit() => SaveSystem.Save();   // one final write
 
-    /* ────────────  PUBLIC API  ─────────── */
+    /*──────────────── public API ────────────────*/
+
     public NeedRuntime GetRuntime(NeedDefinition def) =>
         runtimesByGuid[def.GetInstanceID().ToString()];
 
@@ -71,36 +70,32 @@ public class GameManager : MonoBehaviour
         NeedRuntime rt = GetRuntime(def);
         rt.value = Mathf.Clamp(rt.value + points, 0f, def.maxValue);
         rt.lastTimestamp = NowMs();
+        SaveSystem.Save();                          // immediate persist
     }
 
-    /* ────────────  HELPERS  ───────────── */
-    private void ApplyOfflineDecay(NeedRuntime rt, NeedDefinition def)
-    {
-        float minutesElapsed = (NowMs() - rt.lastTimestamp) / 1000f / 60f;
-        rt.value = Mathf.Clamp(
-            rt.value - minutesElapsed * def.decayPerMinuteClosed,
-            0f, def.maxValue);
+    /*──────────── helper methods ───────────────*/
 
+    void ApplyOfflineDecay(NeedRuntime rt, NeedDefinition def)
+    {
+        float minutes = (NowMs() - rt.lastTimestamp) / 1000f / 60f;
+        rt.value = Mathf.Clamp(
+            rt.value - minutes * def.decayPerMinuteClosed,
+            0f, def.maxValue);
         rt.lastTimestamp = NowMs();
     }
 
-    private void DrainWhileRunning(NeedRuntime rt, NeedDefinition def, float dt)
+    void DrainWhileRunning(NeedRuntime rt, NeedDefinition def, float dt)
     {
         rt.value = Mathf.Clamp(
             rt.value - dt / SecondsPerMinute * def.decayPerMinuteOpen,
             0f, def.maxValue);
     }
 
-    private static long NowMs() =>
-        DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+    static long NowMs() => DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
 
-    private IEnumerator AutosaveLoop()
+    IEnumerator AutosaveLoop()
     {
         var wait = new WaitForSeconds(AutosaveIntervalSecs);
-        while (true)
-        {
-            yield return wait;
-            SaveSystem.Save(payload);
-        }
+        while (true) { yield return wait; SaveSystem.Save(); }
     }
 }

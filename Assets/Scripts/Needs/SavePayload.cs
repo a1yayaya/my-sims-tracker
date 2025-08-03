@@ -8,4 +8,5 @@ using System.Collections.Generic;
 public class SavePayload
 {
     public List<NeedRuntime> needs = new();   // Initialised so we never get null
+    public List<SkillRuntime> skills = new();
 }
