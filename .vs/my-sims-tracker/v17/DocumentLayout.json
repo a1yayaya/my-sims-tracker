@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\aiyat\\my-sims-tracker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2D9FE5DA-EAFB-E433-200D-D8D527D50E3A}|Assembly-CSharp.csproj|c:\\users\\aiyat\\my-sims-tracker\\assets\\scripts\\core\\tabswitcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D9FE5DA-EAFB-E433-200D-D8D527D50E3A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\tabswitcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2D9FE5DA-EAFB-E433-200D-D8D527D50E3A}|Assembly-CSharp.csproj|c:\\users\\aiyat\\my-sims-tracker\\assets\\scripts\\skills\\skillpanelspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D9FE5DA-EAFB-E433-200D-D8D527D50E3A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skills\\skillpanelspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9FE5DA-EAFB-E433-200D-D8D527D50E3A}|Assembly-CSharp.csproj|c:\\users\\aiyat\\my-sims-tracker\\assets\\scripts\\skills\\skillui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D9FE5DA-EAFB-E433-200D-D8D527D50E3A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skills\\skillui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9FE5DA-EAFB-E433-200D-D8D527D50E3A}|Assembly-CSharp.csproj|C:\\Users\\aiyat\\my-sims-tracker\\assets\\scripts\\skills\\skillmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D9FE5DA-EAFB-E433-200D-D8D527D50E3A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skills\\skillmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aiyat\\my-sims-tracker\\Assets\\Scripts\\Core\\TabSwitcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Core\\TabSwitcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,15 +31,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SkillPanelSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\aiyat\\my-sims-tracker\\Assets\\Scripts\\Skills\\SkillPanelSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Skills\\SkillPanelSpawner.cs",
+              "ToolTip": "C:\\Users\\aiyat\\my-sims-tracker\\Assets\\Scripts\\Skills\\SkillPanelSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Skills\\SkillPanelSpawner.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T20:23:27.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SkillUI.cs",
+              "DocumentMoniker": "C:\\Users\\aiyat\\my-sims-tracker\\Assets\\Scripts\\Skills\\SkillUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Skills\\SkillUI.cs",
+              "ToolTip": "C:\\Users\\aiyat\\my-sims-tracker\\Assets\\Scripts\\Skills\\SkillUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Skills\\SkillUI.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAqwD0AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T20:20:24.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SkillManager.cs",
+              "DocumentMoniker": "C:\\Users\\aiyat\\my-sims-tracker\\Assets\\Scripts\\Skills\\SkillManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Skills\\SkillManager.cs",
+              "ToolTip": "C:\\Users\\aiyat\\my-sims-tracker\\Assets\\Scripts\\Skills\\SkillManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Skills\\SkillManager.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAIBJwGEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T20:19:39.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "TabSwitcher.cs",
               "DocumentMoniker": "C:\\Users\\aiyat\\my-sims-tracker\\Assets\\Scripts\\Core\\TabSwitcher.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\TabSwitcher.cs",
               "ToolTip": "C:\\Users\\aiyat\\my-sims-tracker\\Assets\\Scripts\\Core\\TabSwitcher.cs",
               "RelativeToolTip": "Assets\\Scripts\\Core\\TabSwitcher.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAcwCMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T00:30:24.331Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T00:30:24.331Z"
             }
           ]
         }

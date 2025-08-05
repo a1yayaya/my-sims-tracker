@@ -15,6 +15,7 @@ public class SkillUI : MonoBehaviour
     public Button addBtn;              // ← drag AddHoursBtn (Button)
     [Tooltip("Popup prefab with a PopupController on the root")]
     public GameObject addHoursPopup;   // ← drag your AddHoursPopup prefab
+    public Button removeBtn;
 
     [Header("Runtime data")]
     public SkillRuntime runtime;       // ← set by the spawner script
@@ -28,6 +29,7 @@ public class SkillUI : MonoBehaviour
     {
         mgr = FindObjectOfType<SkillsManager>();
         addBtn.onClick.AddListener(OpenPopup);
+        removeBtn.onClick.AddListener(ConfirmRemove);
         if (runtime != null)
             iconImg.sprite = Resources.Load<Sprite>("SkillIcons/" + runtime.iconId);
         Refresh();
@@ -59,5 +61,16 @@ public class SkillUI : MonoBehaviour
 
         popup.Init($"Hours spent on {runtime.name}");
         popup.onConfirm.AddListener(hours => mgr.AddHours(runtime, hours));
+    }
+    void ConfirmRemove()
+    {
+    #if UNITY_EDITOR
+        bool ok = UnityEditor.EditorUtility.DisplayDialog(
+            "Remove skill?",
+            $"Delete '{runtime.name}' permanently?",
+            "Remove", "Cancel");
+        if (!ok) return;
+    #endif
+        mgr.RemoveSkill(runtime);   // calls the new method
     }
 }

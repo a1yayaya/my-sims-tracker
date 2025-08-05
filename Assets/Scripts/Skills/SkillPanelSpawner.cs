@@ -23,6 +23,7 @@ public class SkillsPanelSpawner : MonoBehaviour
         }
 
         mgr.OnSkillCreated += SpawnRow;   // ⭐ listen for new skills
+        mgr.OnSkillRemoved += OnSkillRemoved;
     }
 
     void Start()
@@ -38,6 +39,19 @@ public class SkillsPanelSpawner : MonoBehaviour
         var ui = row.GetComponent<SkillUI>();
         ui.runtime = rt;
     }
+    private void OnSkillRemoved(SkillRuntime rt)
+    {
+        foreach (Transform child in transform)
+        {
+            var ui = child.GetComponent<SkillUI>();
+            if (ui != null && ui.runtime == rt)
+            {
+                Destroy(child.gameObject);
+                break;
+            }
+        }
+    }
+
 
     /*───────────────────────────────*/
     void OnDestroy()                          // ⭐ unsubscribe on scene unload

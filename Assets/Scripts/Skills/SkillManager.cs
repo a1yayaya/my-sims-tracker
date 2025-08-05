@@ -83,6 +83,19 @@ public class SkillsManager : MonoBehaviour
         OnSkillCreated?.Invoke(rt);           // notify UI
         return rt;
     }
+    public event Action<SkillRuntime> OnSkillRemoved;
+    public void RemoveSkill(SkillRuntime rt)
+    {
+        // 1. Remove from the data
+        payload.skills.Remove(rt);
+        runtimeById.Remove(rt.id);
+
+        // 2. Persist
+        SaveSystem.Save();
+
+        // 3. Notify any UI listeners
+        OnSkillRemoved?.Invoke(rt);
+    }
 
     public float XpNeeded(int level, Difficulty diff) =>
         XpForLevel(level, diff);
